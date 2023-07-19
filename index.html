@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <title>Color Scheme Generator</title>
+  </head>
+  <body>
+    <h1 class="heading">Scheme Generator</h1>
+    <div class="main">
+      <div class="color-picker">
+        <div class="d-flex">
+          <input
+            type="color"
+            name="seedColor"
+            id="colorInput"
+            class="colorInput"
+            value="#F55A5A"
+          />
+          <select name="colorScheme" id="colorScheme" class="colorScheme">
+            <option value="monochrome">Monochrome</option>
+            <option value="monochrome-dark">Monochrome-dark</option>
+            <option value="monochrome-light">Monochrome-light</option>
+            <option value="analogic">Analogic</option>
+            <option value="complement">Complement</option>
+            <option value="analogic-complement">Analogic-complement</option>
+            <option value="triad">Triad</option>
+          </select>
+        </div>
+        <button type="submit" class="submit-btn" id="submit-btn">
+          Get color scheme
+        </button>
+      </div>
+      <div class="color-container" id="color-container"></div>
+      <div class="hexValue-container" id="hexValue-container"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
